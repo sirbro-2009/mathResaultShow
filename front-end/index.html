@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/5787457866200452647.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title> الصفحة الرئيسية </title>
+</head>
+<body class="bg-[url(./assets/bgPhone.png)]
+lg:bg-[url(./assets/bgPc.png)]
+bg-no-repeat
+bg-cover
+font-['Rubik']
+min-h-screen flex flex-col
+">
+    <div class="
+text-center
+font-bold
+flex
+flex-col">
+        <h1 class="m-20
+lg:m-5
+animate-pulse
+text-4xl
+font-bold
+text-cyan-600
+"> السلام عليكم
+            <br>
+            اهلا بكم في الصفحة الرئيسية
+        </h1>
+        <h1 dir="rtl" class="text-3xl bg-white rounded-xl p-2 text-slate-700">﴿ إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا﴾ 
+            <br>
+            [ الأحزاب: 56]
+        </h1>
+        <div class="w-full self-center rounded-xl  shadow-zinc-800 shadow-2xl flex flex-col p-10 ">
+            <h1 id="searchTitle" class="text-cyan-400 font-bold text-5xl my-4">ابحث عن علامتك</h1>
+    <form id="signUpform" class="w-full lg:w-1/2 self-center rounded-xl bg-blue-500/50
+                            shadow-zinc-800 shadow-2xl flex flex-col p-10 text-center">
+    <h1 class="text-4xl font-bold ">صفحة انشاء حساب  </h1>
+    <h3 class="text-3xl my-4 font-bold text-blue-900 text-end">الاسم</h3>
+    <input autofocus type="text" id="nameInput" class="bg-white rounded-xl p-2 text-2xl text-end" placeholder="ادخل الاسم">
+    <h3 class="text-3xl my-4 font-bold text-blue-900 text-end">كلمة السر</h3>
+    <input type="password" id="passwordInput" class="bg-white rounded-xl p-2 text-2xl text-end" placeholder="**********">
+                <div class="flex flex-col m-2">
+                    <h1 class="font-bold text-center">الجنس</h1>
+                    <select class=" p-2 rounded-xl bg-teal-500/50 text-center" id="genderInput">
+                            <option selected disabled>-- اختر الجنس --</option>
+                            <option value="male" class="text-blue-500 font-bold text-2xl"> &male; ذكر </option>
+                            <option value="female" class="text-pink-500 font-bold text-2xl"> &female; انثى</option>
+                    </select>
+                </div>
+                <div class="flex flex-col m-2">
+                    <h1 class="font-bold text-center">القسم</h1>
+                    <select class=" p-2 rounded-xl bg-teal-500/50 text-center" id="classInput">
+                            <option selected disabled>-- اختر القسم --</option>
+                            <option value="2AS1" dir="rtl" class="font-bold text-2xl"> 2 عت 1 </option>
+                            <option value="2AS2" dir="rtl" class="font-bold text-2xl">2 عت 2</option>
+                    </select>
+                </div>
+    <button id="addButton" type="submit" class="bg-blue-500/80  text-white mt-4 text-2xl font-bold p-2 rounded-xl
+                                    duration-1000  transition-all hover:bg-blue-600/50 cursor-pointer
+    ">انشاء  حساب</button>
+    <button id="signIn" class="my-2 cursor-pointer duration-1000  transition-all hover:text-white">لدي حساب بالفعل</button>
+    </form>
+    <form id="signInForm" class="w-full lg:w-1/2 self-center rounded-xl bg-blue-500/50
+                            shadow-zinc-800 shadow-2xl flex flex-col p-10 text-center">
+    <h1 class="text-4xl font-bold ">صفحة تسجيل الدخول</h1> 
+    <h3 class="text-3xl my-4 font-bold text-blue-900 text-end">الاسم</h3>
+    <input autofocus type="text" id="nameuInput" class="bg-white rounded-xl p-2 text-2xl text-end" placeholder="ادخل الاسم">
+    <h3 class="text-3xl my-4 font-bold text-blue-900 text-end">كلمة السر</h3>
+    <input type="password" id="passworduInput" class="bg-white rounded-xl p-2 text-2xl text-end" placeholder="**********">
+    <button id="addButton" type="submit" class="bg-blue-500/80  text-white mt-4 text-2xl font-bold p-2 rounded-xl
+                                    duration-1000  transition-all hover:bg-blue-600/50 cursor-pointer
+    ">تسجيل الدخول</button>
+    <button id="signUp" class="my-2 cursor-pointer duration-1000  transition-all hover:text-white">لا املك حساب</button>
+    </form>
+    <div id="studentProps" >
+    </div>
+            </div>
+        </div>
+        <footer class="w-full  bottom-0 bg-cyan-600/40 text-center  p-5">
+            <h1 class="text-white font-bold text-2xl text-center">
+                تم تطوير الموقع بحمد الله و فضله
+                <br>
+                بواسطة زرنيخ محمد معتصم بالله
+            </h1>
+            <a href="https://github.com/sirbro-2009" dir="rtl" class="text-gray-300 text-center text-xl my-2" target="_blank">حساب
+                github انقر لرؤيته</a>
+            <hr class="m-2">
+            <div class="flex justify-between align-middle
+bg-white/30
+p-2
+rounded-xl 
+transition-all
+duration-1000
+hover:bg-white/15 cursor-pointer
+"
+id="adminPage"
+>
+                <img class="w-10 h-auto" src="https://sirbro-2009.github.io/PTCR/style/assets/user/list.png">
+                <h1 class="text-white text-3xl">اعدادت الادمين</h1>
+            </div>
+        </footer>
+<script src="script/main.js"></script>
+</body>
+
+</html>
