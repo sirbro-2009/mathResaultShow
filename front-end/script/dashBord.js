@@ -1,6 +1,6 @@
 //بسم الله الرحمن الرحيم
 let $ = document
-let hoster = `http://192.168.100.3:3000/`
+let hoster = `https://mathresaultshow.onrender.com/`
 $.querySelector("form").onsubmit = (event)=>{
 $.querySelector("span").className = 'text-transparent'
 event.preventDefault()
