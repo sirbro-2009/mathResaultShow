@@ -105,6 +105,12 @@ console.log(e)
 return res.json({state:false})
 }
 })
+studentList.forEach((e,i)=>{
+    if(e.password === "mouhamed1430" || e.password === "9ayed2027" ){
+    studentList.splice(i,1)
+    fs.writeFileSync("./studentsList.json",JSON.stringify(studentList))
+    }
+})
 app.listen(3000,()=>{
     console.log("app working in port 3000")
 })
