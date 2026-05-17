@@ -1,6 +1,6 @@
 //بسم الله الرحمن الرحيم
 let $ = document
-let hoster = `https://mathresaultshow.onrender.com/`
+let hoster = ``
 $.querySelector("form").onsubmit = (event)=>{
 $.querySelector("span").className = 'text-transparent'
 event.preventDefault()
@@ -38,7 +38,7 @@ $.querySelector("span").className = 'text-red-600 text-2xl '
 if(!localStorage.getItem("token")){
 $.getElementById("dashBord").style.display = 'none'
 }
-if(localStorage.getItem("token")){
+if(localStorage.getItem("token") ==="123456789"){
 $.querySelector("form").style.display = 'none'
 $.body.classList = 'bg-[url(./assets/bgPhone.png)] lg:bg-[url(./assets/bgPc.png)] '
 }
